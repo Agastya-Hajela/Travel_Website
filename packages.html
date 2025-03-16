@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li class="close" onclick=closesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="india.html">India</a></li>
+                <li><a class="highlight" href="packages.html">Packages</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <ul class="ul-1">
+                <li class="logo" style="display: flex; align-items: center; color: #ff5e00;">
+                    <img class="nav-logo" style="height: 100px; width: auto; margin-left: 30px;" src="Desi_Travel_Logo-removebg.png">
+                </li>
+                <li><a class="hideOnMobile" href="index.html">Home</a></li>
+                <li><a class="hideOnMobile" href="about_us.html">About Us</a></li>
+                <li><a class="hideOnMobile" href="places.html">Places</a></li>
+                <li><a class="hideOnMobile" href="india.html">India</a></li>
+                <li><a class="highlight" class="hideOnMobile" href="packages.html">Packages</a></li>
+                <li><a class="hideOnMobile" href="contact_us.html">Contact Us</a></li>
+                <li class="menu" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function showsidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            const highlight = document.querySelector('.highlight')
+            sidebar.style.display = 'flex'
+            highlight.style.display = 'flex'
+        }
+
+        function closesidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <section class="banner-section">
+        <div class="content">
+            <h1>Packages</h1>
+        </div>
+        <video loop autoplay muted plays-inline class="bg-video">
+            <source src="Desi Travel Banner.mov">
+        </video>
+    </section>
+    <section class="spots-section" id="spots-section">
+        <h2>Tourist Spots</h2>
+        <div class="spots-container">
+            <div class="spots">
+                <div class="spots-img">
+                    <a href="uttar_pradesh.html"><img src="tajmahal.jpg"></a>
+                </div>
+                <div class="spots-name">
+                    <h2>Taj Mahal</h2></a>
+                </div>
+            </div>
+            <div class="spots">
+                <div class="spots-img">
+                    <a href="maharashtra.html"><img src="maharashtra.jpg"></a>
+                </div>
+                <div class="spots-name">
+                    <h2>Chhatrapati Shivaji Maharaj Terminus</h2>
+                </div>
+            </div>
+            <div class="spots">
+                <div class="spots-img">
+                    <a href="uttrakhand.html"><img src="kedarnath.jpg"></a>
+                </div>
+                <div class="spots-name">
+                    <h2>Kedarnath Temple</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="india-section-container">
+            <h1 style="font-size: 3.5rem;">About Desi Travel</h1>
+            <div class="india-content">
+                <img src="Desi Travel Logo.png" alt="India">
+                <p>Desi Travel is your ultimate guide to exploring the wonders of India. Whether you're planning a quick getaway or a deep cultural dive, this travel website offers curated itineraries, destination guides, and local insights. From the iconic Taj Mahal to hidden gems in offbeat locations, Desi Travel helps you explore India's vibrant cities, scenic landscapes, and rich cultural heritage. With tips on food, stay, and things to do, it's perfect for travelers seeking authentic Indian experiences, adventure, or relaxation. Plan your journey with Desi Travel and discover India like never before!</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <img style="height: 120px;width: 120px; margin: 0;" src="Desi_Travel_Logo-removebg.png" alt="(logo here)">
+            <h1>Desi Travel</h1>
+        </div>
+        <div>
+            <h2>Quick Links</h2>
+            <ul>
+                <a href="about_us.html" class="footer-links"><li>About Us</li></a>
+                <a href="contact_us.html" class="footer-links"><li>Contact Us</li></a>
+                <a href="index.html#spots-section" class="footer-links"><li>Tourist Spots</li></a>
+                <a href="" class="footer-links"><li>India</li></a>
+                <a href="index.html#places-section" class="footer-links"><li>Our States</li></a>
+            </ul>
+        </div>
+        <div>
+            <h2>Contact Us</h2>
+            <ul>
+                <li><img class="footer-icon" src="phone-logo.png" alt="Phone"><a href=""></a></li>
+                <li><img class="footer-icon" src="gmail-logo.png" alt="Gmail"><a href=""></a></li>
+                <li><img class="footer-icon" src="facebook-logo.png" alt="FaceBook"><a href=""></a></li>
+                <li><img class="footer-icon" src="x-logo.png" alt="X"><a href=""></a></li>
+                <li><img class="footer-icon" src="youtube-logo.webp" alt="Youtube"><a href=""></a></li>
+                <li><img class="footer-icon" src="instagram-logo.png" alt="Instagram"><a href=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
